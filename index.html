@@ -1,28 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Dashboard</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
-  <!-- As a heading -->
+  <!-- Central heading -->
   <div class="container">
-  <nav class="navbar navbar-dark bg-dark justify-content-center">
-    <span class="navbarWeather">Weather Dashboard</span>
-  </nav>
-</div>
-<div class="cities">
-    <h1>Search for a City</h1>
+    <h1>Weather Dashboard</h1>
+  </div>
 
+  <!-- Search bar to look up city's forecast -->
+  <div id="cities">
+    <h5>Search for a City</h5>
+    <nav class="navbar navbar-light bg-light">
+      <form class="form-inline">
+        <input class="searchBar mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="searchBtn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </nav>
+  </div>
 
+  <div id="wxInfo"></div>
 
+  <!-- Section beneath search bar to show history of cities viewed -->
+  <div class="card" style="width: 18rem;">
+    <div class="card-header">
+      Featured
+    </div>
+    <ul class="list-group list-group-flush"></ul>
+  </div>
 
+  <!-- Main area to view current city's forecast -->
+  <div class="col-lg-9">
+    <div class="currentCity"></div>
+    <div class="Temperature"></div>
+    <div class="Humidity"></div>
+    <div class="Wind Speed"></div>
+    <div class="UV Index"></div>
+  </div>
 
-</div>
-    
+  <!-- Show 5 boxes on bottom with 5-day forecast of current city -->
+  <div class="col-md-12">
+    <h5 id="forecast5D">5-Day Forecast:</h5>
+    <div id="forecast" class="row">
+
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+
 </body>
+
 </html>
