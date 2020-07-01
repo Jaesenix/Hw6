@@ -33,32 +33,90 @@
   <!-- Section beneath search bar to show history of cities viewed -->
   <div class="card" style="width: 18rem;">
     <div class="card-header">
-      Featured
+      
     </div>
     <ul class="list-group list-group-flush"></ul>
   </div>
 
   <!-- Main area to view current city's forecast -->
-  <div class="col-lg-9">
-    <div class="currentCity"></div>
-    <div class="Temperature"></div>
-    <div class="Humidity"></div>
-    <div class="Wind Speed"></div>
-    <div class="UV Index"></div>
+  <div class="jumbotron">
+    <div class="currentDay"></div>
+    <div class="city"></div>
+    <br>
+    <div class="tempF">Temperature: </div>
+    <br>
+    <div class="humidity">Humidity: </div>
+    <br>
+    <div class="wind">Wind Speed: </div>
+    <br>
+  </div>
   </div>
 
   <!-- Show 5 boxes on bottom with 5-day forecast of current city -->
-  <div class="col-md-12">
-    <h5 id="forecast5D">5-Day Forecast:</h5>
-    <div id="forecast" class="row">
+  <div class="forecast5Day">5-Day Forecast:
+    <div class="row">
+      <br>
+      <div class="card1" style="width: 11rem;">
+        <div class="card-body">
+          <p class="card-text"><div class="date1">Date: </div>
+            <br>
+            <div class="tempF">Temp: </div>
+            <br>
+            <div class="humidity">Humidity: </div>
+          </p>
+          <div></div>
+          <div class="card2" style="width: 11rem;">
+            <div class="card-body">
+              <p class="card-text"><div class="date2">Date: </div>
+                <br>
+                <div class="tempF">Temp: </div>
+                <br>
+                <div class="humidity">Humidity: </div>
+              </p>
+              <div></div>
+              <div class="card3" style="width: 11rem;">
+                <div class="card-body">
+                  <p class="card-text"><div class="date3">Date: </div>
+                    <br>
+                    <div class="tempF">Temp: </div>
+                    <br>
+                    <div class="humidity">Humidity: </div>
+                  </p>
+                </div>
+              </div>
+              <div></div>
+              <div class="card4" style="width: 11rem;">
+                <div class="card-body">
+                  <p class="card-text"><div class="date4">Date: </div>
+                    <br>
+                    <div class="tempF">Temp: </div>
+                    <br>
+                    <div class="humidity">Humidity: </div>
+                  </p>
+                  <div></div>
+                  <div class="card5" style="width: 11rem;">
+                    <div class="card-body">
+                      <p class="card-text"><div class="date5">Date: </div>
+                        <br>
+                        <div class="tempF">Temp: </div>
+                        <br>
+                        <div class="humidity">Humidity: </div>
+                      </p>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    </div>
-  </div>
-  </div>
-  </div>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script type="text/javascript" src="script.js"></script>
+      <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script> -->
+      <script type="text/javascript" src="https://momentjs.com/downloads/moment-with-locales.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="script.js"></script>
 
 </body>
 
